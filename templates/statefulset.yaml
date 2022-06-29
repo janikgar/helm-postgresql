@@ -93,7 +93,7 @@ spec:
         volumeMounts:
         {{- if .Values.persistence.enabled }}
         - name: data
-          mountPath: {{ .Values.persistence.mountPath }}/data
+          mountPath: {{ .Values.persistence.mountPath }}
           subPath: {{ .Values.persistence.subPath }}
           readOnly: false
         {{- end }}
